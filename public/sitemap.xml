@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-03-02T15:02:46.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/links/index.html</loc>
+    
+    <lastmod>2019-03-02T14:57:30.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/03/01/blog-bulid/</loc>
+    
+    <lastmod>2019-03-02T14:21:40.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/03/02/inline-block-center/</loc>
+    
+    <lastmod>2019-03-02T14:16:54.609Z</lastmod>
+    
+  </url>
+  
+</urlset>

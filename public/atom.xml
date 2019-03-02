@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Antelope&#39;s Home</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-03-02T14:16:54.609Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>zJll</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>inline-block 实 现 水 平 居 中</title>
+    <link href="http://yoursite.com/2019/03/02/inline-block-center/"/>
+    <id>http://yoursite.com/2019/03/02/inline-block-center/</id>
+    <published>2019-03-02T14:16:54.893Z</published>
+    <updated>2019-03-02T14:16:54.609Z</updated>
+    
+    <content type="html"><![CDATA[<p>经 常 在 使 用 inline-block 的 时 候 无 法 居 中 , 自 身 又 不 是 很 擅 长 margin 的 auto 居中 , 于 是 找 到 了 另 一 种 方 案 来 实 现 , 尽 管 现 在 还 没 有 搞 清 楚 原 理 ）逃 , 但 是 会 认 真 去 看 , 以 后 等 我 搞 清 楚 了 再 来 说 明 原 理</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;example&quot;&gt;</span><br><span class="line">  &lt;p&gt;任意&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">  #example &#123;</span><br><span class="line">    text-align:center;</span><br><span class="line">  &#125;</span><br><span class="line">  #example:after &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    vertical-align:middle;</span><br><span class="line">    content:&apos;&apos;;</span><br><span class="line">  &#125;</span><br><span class="line">  #example p &#123;</span><br><span class="line">    display:inline-block;</span><br><span class="line">    vertical-align:middle;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>感 想 : 呃 ,和 我 自 己 想 象 的 差 距 好 像 特 别 大 阿 , 还 是 要 更 认 真 , 努 力 , 不 能 放 弃</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;经 常 在 使 用 inline-block 的 时 候 无 法 居 中 , 自 身 又 不 是 很 擅 长 margin 的 auto 居中 , 于 是 找 到 了 另 一 种 方 案 来 实 现 , 尽 管 现 在 还 没 有 搞 清 楚 原 理 ）逃 , 但 是 会 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>诞 生 的 记 录</title>
+    <link href="http://yoursite.com/2019/03/01/blog-bulid/"/>
+    <id>http://yoursite.com/2019/03/01/blog-bulid/</id>
+    <published>2019-03-01T04:00:00.000Z</published>
+    <updated>2019-03-02T14:21:40.581Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="选-择-Hexo"><a href="#选-择-Hexo" class="headerlink" title="选 择 Hexo"></a>选 择 Hexo</h3><p>起 初 是 打 算 自 己 写 html , 但 是 只 写 了 页 面 就 放 弃 了, 太 难 了, 也 许 以 后 会 写 , 所 以 选 择 了 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> , 选 择 了<br><a href="https://github.com/Ben02/hexo-theme-Anatole" target="_blank" rel="noopener">Anatole</a> 主 题 </p><h3 id="部-署"><a href="#部-署" class="headerlink" title="部 署"></a>部 署</h3><p>从 昨 天 晚 上 到 今 天 中 午 一 直 都 在 找 方 法 将 hexo 生 成 的 博 客 部 署 到 阿 里 云 上 , 这 段 时 间 一 直 在 配 置 nginx ,<br>到 最 后 也 没 有 成 功 将 其 部 署 成 功 , 于 是 我 只 能 生 成 静 态 文 件 打 包 , 虽 然 不 能 自 动 部 署 , 但 好 歹 能 用<br>打 包 成 静 态 文 件</p><pre><code>$ hexo generate</code></pre><p>尽 管 最 后 没 有 成 功 , 但 是 我 学 到 了 很 多 , 更 加 熟 悉 了 nginx 以 及 如 何 配 置 nginx , 对 linux 的 常 用 操 作 ( 包 括 对 文 件 的 权 限 设 置<br>, 移 动 , 删 除 ; 查 看 端 口 占 用 , 杀 死 进 程 , systemctl 的 使 用 , ssh 的 使 用 等) 更 加 熟 练 , 同 时 也 不 得 不 感 叹 github 的 重 要 性 , 因 为<br>没 有 将 更 新 的 代 码 上 传 到 仓 库 , 在 我 rm -rf 后 , 之 前 做 的 一 切 都 白 费 了 , 备 份 真 的 很 重 要 , 尽 管 第 二 次 轻 车 熟 路 , 但 是 还 是<br>花 了 不 该 花 的 精 力 , 时 间 , 买 这 个 教 训 是 划 得 来 的 买 卖 , 顺 便 把 关 于 和 友 链 做 了</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结 :"></a>总结 :</h3><h4 id="花-造-房-子-的-时-间-去-买-房-子"><a href="#花-造-房-子-的-时-间-去-买-房-子" class="headerlink" title="花 造 房 子 的 时 间 去 买 房 子"></a>花 造 房 子 的 时 间 去 买 房 子</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;选-择-Hexo&quot;&gt;&lt;a href=&quot;#选-择-Hexo&quot; class=&quot;headerlink&quot; title=&quot;选 择 Hexo&quot;&gt;&lt;/a&gt;选 择 Hexo&lt;/h3&gt;&lt;p&gt;起 初 是 打 算 自 己 写 html , 但 是 只 写 了 页 面 就 放 弃 了, 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
